@@ -1,0 +1,266 @@
+/* ============================================================
+   why.css  –  Why This Matters page
+   Inherits all CSS variables from styles.css
+   ============================================================ */
+
+/* ── Page Header ─────────────────────────────────────────── */
+.page-header {
+  position: relative;
+  z-index: 2;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 3rem 2rem 2.5rem;
+}
+.breadcrumb {
+  display: inline-flex;
+  align-items: center;
+  gap: .45rem;
+  font-size: .72rem;
+  color: var(--muted);
+  margin-bottom: 1.2rem;
+  opacity: 0;
+  animation: fadeUp .5s forwards .1s;
+}
+.breadcrumb .fira   { font-family: 'Fira Code', monospace; letter-spacing: .05em; }
+.breadcrumb .sep    { opacity: .3; }
+.breadcrumb .active { color: var(--text); }
+
+.page-title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2rem, 5.5vw, 3.2rem);
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  line-height: 1.08;
+  margin-bottom: .9rem;
+  opacity: 0;
+  animation: fadeUp .55s forwards .2s;
+}
+.page-sub {
+  font-size: .9rem;
+  font-weight: 300;
+  line-height: 1.75;
+  color: var(--muted);
+  max-width: 520px;
+  opacity: 0;
+  animation: fadeUp .55s forwards .32s;
+}
+
+/* ── Pull Quote ──────────────────────────────────────────── */
+.pull-quote-wrap {
+  position: relative;
+  z-index: 2;
+  max-width: 850px;
+  margin: 3rem auto 0;
+  padding: 0 2rem;
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+.pull-quote-wrap.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+.pull-quote {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(.85rem, 1.6vw, 1rem);
+  font-weight: 700;
+  line-height: 1.55;
+  letter-spacing: -.3px;
+  color: rgba(232,236,244,0.55);
+  border-left: 3px solid;
+  border-image: linear-gradient(180deg, var(--grad-a), var(--grad-b)) 1;
+  padding: .5rem 0 .5rem 1.8rem;
+  font-style: normal;
+}
+
+/* ── Main Layout ─────────────────────────────────────────── */
+.why-main {
+  position: relative;
+  z-index: 2;
+  max-width: 850px;
+  margin: 4rem auto 0;
+  padding: 0 2rem 6rem;
+}
+
+.why-sep {
+  width: 100%;
+  height: 1px;
+  background: rgba(255,255,255,0.06);
+  margin: 4rem 0;
+}
+
+/* ── Why Section ─────────────────────────────────────────── */
+.why-section {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  gap: 2rem;
+  align-items: start;
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+.why-section.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.why-number {
+  font-family: 'Fira Code', monospace;
+  font-size: .72rem;
+  color: var(--muted);
+  letter-spacing: .1em;
+  padding-top: .45rem;
+  opacity: .5;
+}
+
+.why-content { flex: 1; }
+
+.why-title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(1.2rem, 3vw, 1.55rem);
+  font-weight: 800;
+  letter-spacing: -.4px;
+  line-height: 1.2;
+  color: var(--text);
+  margin-bottom: 1.2rem;
+}
+
+.why-content p {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: var(--muted);
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.why-content p:last-of-type { margin-bottom: 1.5rem; }
+
+/* ── Stats Row ───────────────────────────────────────────── */
+.why-stat-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1.8rem;
+}
+.why-stat {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  padding: 1.2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+}
+.why-stat-num {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1;
+}
+.why-stat-label {
+  font-size: .75rem;
+  line-height: 1.5;
+  color: var(--muted);
+  font-weight: 300;
+}
+
+/* ── Callout Box ─────────────────────────────────────────── */
+.callout-box {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background: rgba(255,64,129,0.04);
+  border: 1px solid rgba(255,64,129,0.12);
+  border-left: 3px solid var(--grad-b);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 1.1rem 1.3rem;
+  margin-top: 1.5rem;
+}
+.callout-box.callout-affirm {
+  background: rgba(0,198,255,0.04);
+  border-color: rgba(0,198,255,0.12);
+  border-left-color: var(--grad-a);
+}
+.callout-icon {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  margin-top: .05rem;
+}
+.callout-box p {
+  font-size: .85rem !important;
+  line-height: 1.7 !important;
+  color: var(--muted);
+  margin-bottom: 0 !important;
+}
+
+/* ── CTA Strip ───────────────────────────────────────────── */
+.cta-strip {
+  position: relative;
+  z-index: 2;
+  padding: 4rem 2rem;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+.cta-strip.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+.cta-strip-inner {
+  max-width: 780px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.cta-heading {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: .2rem !important;
+}
+.cta-sub {
+  font-size: .85rem !important;
+  color: var(--muted);
+  margin-bottom: 0 !important;
+}
+.cta-strip-btns {
+  display: flex;
+  gap: .8rem;
+  flex-wrap: wrap;
+}
+.cta-btn-ghost {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: .9rem;
+  font-weight: 500;
+  border-radius: 999px;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.15);
+  color: var(--text);
+  transition: border-color var(--transition), background var(--transition);
+}
+.cta-btn-ghost:hover {
+  border-color: rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.04);
+}
+
+/* ── Responsive ──────────────────────────────────────────── */
+@media (max-width: 640px) {
+  .page-header { padding: 2rem 1.2rem 1.5rem; }
+  .pull-quote-wrap { padding: 0 1.2rem; }
+  .why-main { padding: 0 1.2rem 4rem; }
+  .why-section {
+    grid-template-columns: 1fr;
+    gap: .5rem;
+  }
+  .why-number { display: none; }
+  .why-stat-row { grid-template-columns: 1fr; }
+  .cta-strip-inner { flex-direction: column; }
+  .cta-strip-btns { flex-direction: column; width: 100%; }
+  .cta-btn, .cta-btn-ghost { text-align: center; }
+}

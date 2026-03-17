@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Surveillance Examples · Invisible Borders</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="news.css">
+</head>
+<body>
+
+  <!-- Ambient orbs -->
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <!-- Nav -->
+  <nav>
+    <a href="index.html" class="nav-logo">invisible-borders/</a>
+    <div class="nav-links">
+      <a href="index.html#features">Resources</a>
+    </div>
+  </nav>
+
+  <!-- Compact Page Header -->
+  <header class="page-header">
+    <div class="breadcrumb">
+      <span class="fira">resources</span>
+      <span class="sep">/</span>
+      <span class="fira active">surveillance-examples</span>
+    </div>
+    <h1 class="page-title">Immigration <span class="grad-text">Surveillance</span></h1>
+  </header>
+
+  <div class="divider"></div>
+
+  <!-- Filter Bar -->
+  <div class="filter-bar">
+    <span class="filter-label fira">filter:</span>
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="AI-Surveillance">AI Surveillance</button>
+    <button class="filter-btn" data-filter="location">Location Data</button>
+    <button class="filter-btn" data-filter="Device-Forensics">Device Forensics</button>
+    <button class="filter-btn" data-filter="data-sharing">Data Sharing</button>
+  </div>
+
+  <!-- Articles Feed -->
+  <main class="articles-feed">
+
+    <!-- Article 1 -->
+    <article class="news-article reveal" data-category="AI-Surveillance">
+      <div class="article-meta">
+        <span class="case-tag tag-social">AI Surveillance</span>
+        <span class="article-date fira">2026</span>
+      </div>
+      <h2 class="article-title">Mission Creep: AI Surveillance at DHS Crosses Dangerous Line Into Tracking Americans</h2>
+      <div class="article-body">
+        <p>The AI tools built to guard America's borders are no longer staying there. What began as immigration enforcement technology — facial recognition, biometric scanning, social media monitoring — has expanded quietly into America's neighborhoods, and is now being used to identify and investigate U.S. citizens. The American Immigration Council calls this "mission creep": a shift in objectives that gradually turns a limited mandate into something far larger.</p>
+        <p>Procurement records reveal a sweeping expansion of DHS surveillance infrastructure with little public scrutiny. ICE has secured a $30 million contract with Palantir for a platform called ImmigrationOS, which uses predictive analysis to manage what the company describes as the full "immigration lifecycle" of individuals. In Minnesota, ICE deployed social media monitoring and location-tracking systems explicitly marketed for use at protests and other First Amendment-protected gatherings — tools that let agents map where people have been and chart their associations without a warrant or specific suspicion.</p>
+      </div>
+      <div class="article-footer">
+        <div class="impact-chip"><span class="impact-dot"></span>$30 Million AI Surveillance Contract</div>
+        <a href="https://www.americanimmigrationcouncil.org/blog/ice-ai-surveillance-tracking-americans/#:~:text=Mission%20Creep%3A%20AI%20Surveillance%20at,Tracking%20Americans%20%2D%20American%20Immigration%20Council" target="_blank" class="learn-link fira">read source →</a>
+      </div>
+    </article>
+
+    <div class="article-sep"></div>
+
+    <!-- Article 2 -->
+    <article class="news-article reveal" data-category="Device-Forensics">
+      <div class="article-meta">
+        <span class="case-tag tag-location">Device Forensics</span>
+        <span class="article-date fira">2026</span>
+      </div>
+      <h2 class="article-title">ICE Is Going on a Surveillance Shopping Spree</h2>
+      <div class="article-body">
+        <p>ICE renewed an $11 million contract with Cellebrite, which can unlock seized devices and extract a complete copy of everything on them — apps, location history, photos, call records, text messages, and even encrypted messages from Signal and WhatsApp. A separate $3 million contract went to Cellebrite's main competitor, Magnet Forensics. The number of phones searched has risen dramatically year over year, reaching a new high of 14,899 devices searched by CBP alone in a single quarter of 2025.</p>
+        <p>Beyond phones, ICE spent $5 million on two tools from Pen Link: Webloc, which gathers the locations of millions of phones by pulling data from mobile data brokers, and Tangles, a social media surveillance platform that builds detailed dossiers by linking a person's posting history, location data, social graph, and photos with those of their friends and family. Because Pen Link sells this data directly to law enforcement, ICE can access it without ever obtaining a warrant. EFF's core concern is that none of these tools are limited to undocumented people — they are already being used against legal immigrants, U.S. citizens, and people who work with immigrant communities.</p>
+      </div>
+      <div class="article-footer">
+        <div class="impact-chip"><span class="impact-dot"></span>15,000 Devices Seized in Only 2 Months</div>
+        <a href="https://www.eff.org/deeplinks/2026/01/ice-going-surveillance-shopping-spree#:~:text=Our%20concern%20with%20ICE%20buying,who%20work%20with%20immigrant%20communities." target="_blank" class="learn-link fira">read source →</a>
+      </div>
+    </article>
+
+    <div class="article-sep"></div>
+
+    <!-- Article 3 -->
+    <article class="news-article reveal" data-category="location">
+      <div class="article-meta">
+        <span class="case-tag tag-data">Location Data</span>
+        <span class="article-date fira">2025</span>
+      </div>
+      <h2 class="article-title">New Report Highlights How CBP and Border Patrol are Becoming a Repressive Internal Intelligence Agency </h2>
+      <div class="article-body">
+        <p>The U.S. Border Patrol — an agency most Americans associate with the border — has quietly built a nationwide driver surveillance system that monitors the movements of millions of people across the country. Using a network of automated license plate readers (ALPRs) strung along highways from the southern border as far north as Illinois and Michigan, Border Patrol "intelligence" operatives scan for movement patterns they deem suspicious. The readers are often hidden inside traffic safety equipment like drums and barrels specifically to avoid public detection.</p>
+        <p>Once someone is flagged, local police — coordinating with federal agents through group chats — pull them over using a "pretext stop": a real or invented minor traffic violation like slightly exceeding the speed limit, a failure to signal, or a dangling air freshener. From there, drivers are aggressively questioned and frequently subjected to searches and civil asset forfeiture — the seizure of cash and vehicles without any proof of wrongdoing, forcing innocent people into costly legal battles to recover their own property.</p>
+      </div>
+      <div class="article-footer">
+        <div class="impact-chip"><span class="impact-dot"></span>Automated License Plate Readers Surveil Millions of Americans</div>
+        <a href="https://www.aclu.org/news/privacy-technology/border-patrol-alpr-dragnet#:~:text=Collect%20data%20on%20Americans'%20movements,of%20millions%20of%20Americans'%20movements" target="_blank" class="learn-link fira">read source →</a>
+      </div>
+    </article>
+
+    <div class="article-sep"></div>
+
+    <!-- Article 4 -->
+    <article class="news-article reveal" data-category="AI-Surveillance">
+      <div class="article-meta">
+        <span class="case-tag tag-biometric">AI Surveillance</span>
+        <span class="article-date fira">2026</span>
+      </div>
+      <h2 class="article-title">ICE agents reveal daily arrest quotas and surveillance app in rare court testimony</h2>
+      <div class="article-body">
+        <p>A rare window into ICE's internal operations opened in March 2026 when court testimony — compelled by a federal lawsuit — revealed that agents in Oregon were operating under daily arrest quotas and using a custom AI-assisted application to identify neighborhoods and individuals to target. The Guardian was first to report the details in full, drawn from a December 2025 hearing in the class-action case M-J-M-A v. Wamsley, brought by Portland-based nonprofit Innovation Law Lab.</p>
+        <p>Agents also described using a tool called ELITE — Enhanced Leads Identification and Targeting for Enforcement — a Palantir-built app that maps areas where people with an "immigration nexus" may live by drawing on data from multiple sources. Officers used it to surveil an apartment complex in Woodburn, a farming community, before stopping a van of farmworkers and detaining seven people. The agent acknowledged the app produces probabilities, not confirmed identities. A federal judge ruled the pattern of warrantless arrests in the case violated the Fourth and Fifth Amendments, issuing an injunction requiring ICE to obtain a supervisor-signed warrant before detaining anyone in Oregon for a civil immigration violation.</p>
+      </div>
+      <div class="article-footer">
+        <div class="impact-chip"><span class="impact-dot"></span>Custom ICE App Reports High-Value Targets</div>
+        <a href="https://www.theguardian.com/us-news/2026/mar/13/ice-agent-court-testimony-oregon" target="_blank" class="learn-link fira">read source →</a>
+      </div>
+    </article>
+
+    <div class="article-sep"></div>
+
+    <!-- Article 5 -->
+    <article class="news-article reveal" data-category="data-sharing">
+      <div class="article-meta">
+        <span class="case-tag tag-biometric">Data Sharing</span>
+        <span class="article-date fira">2026</span>
+      </div>
+      <h2 class="article-title">DHS Is Buying Its Way Around the Constitution to Track Your Phone Without a Warrant</h2>
+      <div class="article-body">
+        <p>The Fourth Amendment requires the government to obtain a warrant before searching your private information. ICE, Customs and Border Protection, the Secret Service, and other parts of the Department of Homeland Security have found a way around that requirement: they simply buy the data instead. The ACLU obtained thousands of pages of internal DHS records through a multi-year Freedom of Information Act lawsuit, and the documents reveal the full scope of how federal agencies have spent millions of taxpayer dollars purchasing bulk access to cell phone location data harvested from ordinary smartphone apps — without ever going before a judge.</p>
+      </div>
+      <div class="article-footer">
+        <div class="impact-chip"><span class="impact-dot"></span>Warrantless Searches</div>
+        <a href="https://www.aclu.org/news/privacy-technology/dhs-is-circumventing-constitution-by-buying-data-it-would-normally-need-a-warrant-to-access#:~:text=Today%2C%20the%20ACLU%20published%20documents,enables%20government%20tracking%20of%20our" target="_blank" class="learn-link fira">read source →</a>
+      </div>
+    </article>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <span class="footer-sep">·</span>
+    <a href="#">Invisible Borders</a>
+  </footer>
+
+  <script>
+    // Filter functionality
+    const btns = document.querySelectorAll('.filter-btn');
+    const articles = document.querySelectorAll('.news-article');
+    const seps = document.querySelectorAll('.article-sep');
+
+    btns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        btns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+
+        articles.forEach((a, i) => {
+          const show = filter === 'all' || a.dataset.category === filter;
+          a.style.display = show ? '' : 'none';
+          if (seps[i]) seps[i].style.display = show ? '' : 'none';
+        });
+      });
+    });
+
+    // Scroll-reveal
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('revealed');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.07 });
+
+    articles.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

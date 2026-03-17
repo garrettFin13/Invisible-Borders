@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Digital Privacy Tools · Invisible Borders</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="tools.css">
+</head>
+<body>
+
+  <!-- Ambient orbs -->
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <!-- Nav -->
+  <nav>
+    <a href="index.html" class="nav-logo">invisible-borders/</a>
+    <div class="nav-links">
+      <a href="index.html#features">Resources</a>
+    </div>
+  </nav>
+
+  <!-- Compact Header -->
+  <header class="page-header">
+    <div class="breadcrumb">
+      <span class="fira">resources</span>
+      <span class="sep">/</span>
+      <span class="fira active">digital-privacy-tools</span>
+    </div>
+    <h1 class="page-title">Digital <span class="grad-text">Privacy Tools</span></h1>
+  </header>
+
+  <div class="divider"></div>
+
+  <!-- Category Nav -->
+  <div class="cat-nav">
+    <a href="#messaging" class="cat-link active">Messaging</a>
+    <a href="#vpn" class="cat-link">VPN</a>
+    <a href="#browsing" class="cat-link">Browsing</a>
+    <a href="#email" class="cat-link">Email</a>
+    <a href="#devices" class="cat-link">Devices</a>
+  </div>
+
+  <!-- Tools Content -->
+  <main class="tools-main">
+
+    <!-- ── Messaging ── -->
+    <section id="messaging" class="tool-section reveal">
+      <div class="section-label">
+        <span class="section-icon">💬</span>
+        <h2 class="section-title">Secure Messaging</h2>
+        <p class="section-desc">End-to-end encrypted apps ensure only you and your recipient can read your messages — not your carrier, not the app company, not law enforcement without a device in hand.</p>
+      </div>
+      <div class="tools-grid">
+
+        <div class="tool-card recommended">
+          <div class="tool-card-top">
+            <div class="tool-name-row">
+              <span class="tool-name">Signal</span>
+              <span class="rec-badge">Top Pick</span>
+            </div>
+            <p class="tool-desc">The gold standard for private messaging. End-to-end encrypted calls, texts, and file sharing. Collects almost no metadata. Open-source and audited by independent security researchers.</p>
+          </div>
+          <div class="tool-meta">
+            <span class="meta-tag">Free</span>
+            <span class="meta-tag">Open Source</span>
+            <span class="meta-tag">iOS · Android · Desktop</span>
+          </div>
+          <a href="https://signal.org" target="_blank" class="tool-link fira">signal.org →</a>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-card-top">
+            <div class="tool-name-row">
+              <span class="tool-name">WhatsApp</span>
+            </div>
+            <p class="tool-desc">Uses Signal's encryption protocol for message content, but collects significant metadata — who you contact, how often, your location, and device info — which is shared with Meta. Better than SMS, but not ideal for high-risk situations.</p>
+          </div>
+          <div class="tool-meta">
+            <span class="meta-tag">Free</span>
+            <span class="meta-tag">iOS · Android</span>
+            <span class="meta-tag caution">Metadata risk</span>
+          </div>
+          <a href="https://www.whatsapp.com" target="_blank" class="tool-link fira">whatsapp.com →</a>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-card-top">
+            <div class="tool-name-row">
+              <span class="tool-name">Briar</span>
+            </div>
+            <p class="tool-desc">Designed for activists and journalists in high-risk environments. Works without internet — messages route over Bluetooth or Wi-Fi directly between devices. No central server means nothing to subpoena.</p>
+          </div>
+          <div class="tool-meta">
+            <span class="meta-tag">Free</span>
+            <span class="meta-tag">Open Source</span>
+            <span class="meta-tag">Android</span>
+          </div>
+          <a href="https://briarproject.org" target="_blank" class="tool-link fira">briarproject.org →</a>
+        </div>
+
+      </div>
+      <div class="section-tip">
+        <span class="tip-icon fira">!</span>
+        <p><strong>Tip:</strong> Even with encrypted messaging, be mindful of who has physical access to your phone. Device seizure is the most common way encrypted messages are accessed by law enforcement — not by breaking the encryption.</p>
+      </div>
+    </section>
+
+    <div class="section-sep"></div>
+
+    <!-- ── VPN ── -->
+    <section id="vpn" class="tool-section reveal">
+      <div class="section-label">
+        <span class="section-icon">🔒</span>
+        <h2 class="section-title">VPNs</h2>
+        <p class="section-desc">A VPN (Virtual Private Network) hides your internet traffic from your internet provider and masks your IP address. It does not make you anonymous, but it significantly reduces your exposure to network-level surveillance.</p>
+      </div>
+      <div class="tools-grid">
+
+        <div class="tool-card recommended">
+          <div class="tool-card-top">
+            <div class="tool-name-row">
+              <span class="tool-name">Mullvad</span>
+              <span class="rec-badge">Top Pick</span>
+            </div>
+            <p class="tool-desc">No account required — you pay with a randomly generated account number. Accepts cash and cryptocurrency. A strict no-logs policy has been verified by independent audits and confirmed when Swedish authorities seized servers and found nothing.</p>
+          </div>
+          <div class="tool-meta">
+            <span class="meta-tag">~$5/mo</span>
+            <span class="meta-tag">Open Source</span>
+            <span class="meta-tag">All platforms</span>
+          </div>
+          <a href="https://mullvad.net" target="_blank" class="tool-link fira">mullvad.net →</a>
+        </div>
+
+        <div class="tool-card recommended">
+          <div class="tool-card-top">
+            <div class="tool-name-row">
+              <span class="tool-name">Proton VPN</span>
+              <span class="rec-badge">Top Pick</span>
+            </div>
+            <p class="tool-desc">Run by the team behind ProtonMail in Switzerland, with strong privacy laws. Fully audited, open-source apps, and a verified no-logs policy. Has a free tier with no data cap — unusual for any reputable VPN.</p>
+          </div>
+          <div class="tool-meta">
+            <span class="meta-tag">Free tier available</span>
+            <span class="meta-tag">Open Source</span>
+            <span class="meta-tag">All platforms</span>
+          </div>
+          <a href="https://protonvpn.com" target="_blank" class="tool-link fira">protonvpn.com →</a>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-card-top">
+            <div class="tool-name-row">
+              <span class="tool-name">Tor (not a VPN)</span>
+            </div>
+            <p class="tool-desc">Tor routes traffic through three volunteer-run relays, making it very difficult to trace back to you. Slower than a VPN, but stronger anonymity. Best used via the Tor Browser for general web access or in high-risk situations.</p>
+          </div>
+          <div class="tool-meta">
+            <span class="meta-tag">Free</span>
+            <span class="meta-tag">Open Source</span>
+            <span class="meta-tag">Desktop · Android</span>
+          </div>
+          <a href="https://www.torproject.org" target="_blank" class="tool-link fira">torproject.org →</a>
+        </div>
+
+      </div>
+      <div class="section-tip">
+        <span class="tip-icon fira">!</span>
+        <p><strong>Avoid:</strong> Free VPNs with no clear business model. Many sell your browsing data to the same brokers that government agencies buy from. A VPN is only as trustworthy as the company running it.</p>
+      </div>
+    </section>
+
+    <div class="section-sep"></div>
+
+    <!-- ── Browsing ── -->
+    <section id="browsing" class="tool-section reveal">
+      <div class="section-label">
+        <span class="section-icon">🌐</span>
+        <h2 class="section-title">Private Browsing</h2>
+        <p class="section-desc">Standard browsers track your activity extensively. These alternatives minimize fingerprinting, block trackers, and reduce the data trail left behind as you navigate the web.</p>
+      </div>
+      <div class="tools-grid">
+
+        <div class="tool-card recommended">
+          <div class="tool-card-top">
+            <div class="tool-name-row">
+              <span class="tool-name">Tor Browser</span>
+              <span class="rec-badge">Top Pick</span>
+            </div>
+            <p class="tool-desc">Built on Firefox with all traffic routed through Tor. Blocks trackers, resists fingerprinting, and hides your IP by default. The strongest option for anonymous browsing — especially for researching sensitive topics.</p>
+          </div>
+          <div class="tool-meta">
+            <span class="meta-tag">Free</span>
+            <span class="meta-tag">Open Source</span>
+            <span class="meta-tag">Desktop · Android</span>
+          </div>
+          <a href="https://www.torproject.org/download" target="_blank" class="tool-link fira">torproject.org →</a>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-card-top">
+            <div class="tool-name-row">
+              <span class="tool-name">Firefox + uBlock Origin</span>
+            </div>
+            <p class="tool-desc">Firefox is open-source and highly configurable for privacy. Pairing it with the free uBlock Origin extension blocks ads, trackers, and many data collection scripts. A strong everyday option that balances privacy with usability.</p>
+          </div>
+          <div class="tool-meta">
+            <span class="meta-tag">Free</span>
+            <span class="meta-tag">Open Source</span>
+            <span class="meta-tag">All platforms</span>
+          </div>
+          <a href="https://firefox.com" target="_blank" class="tool-link fira">firefox.com →</a>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-card-top">
+            <div class="tool-name-row">
+              <span class="tool-name">DuckDuckGo Browser</span>
+            </div>
+            <p class="tool-desc">A privacy-focused browser with built-in tracker blocking and a search engine that doesn't build a profile on you. Good for everyday use on mobile. Does not route traffic through Tor, but significantly reduces casual surveillance.</p>
+          </div>
+          <div class="tool-meta">
+            <span class="meta-tag">Free</span>
+            <span class="meta-tag">iOS · Android · Desktop</span>
+          </div>
+          <a href="https://duckduckgo.com" target="_blank" class="tool-link fira">duckduckgo.com →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="section-sep"></div>
+
+    <!-- ── Email ── -->
+    <section id="email" class="tool-section reveal">
+      <div class="section-label">
+        <span class="section-icon">✉️</span>
+        <h2 class="section-title">Secure Email</h2>
+        <p class="section-desc">Standard email — Gmail, Outlook, Yahoo — is not private. Providers scan content, share data with third parties, and comply with government requests. These alternatives use end-to-end encryption so only the intended recipient can read your messages.</p>
+      </div>
+      <div class="tools-grid">
+
+        <div class="tool-card recommended">
+          <div class="tool-card-top">
+            <div class="tool-name-row">
+              <span class="tool-name">Proton Mail</span>
+              <span class="rec-badge">Top Pick</span>
+            </div>
+            <p class="tool-desc">End-to-end encrypted email based in Switzerland. Proton cannot read your messages and has no ability to hand over email content to authorities — only metadata. Free tier available. Used widely by journalists and activists.</p>
+          </div>
+          <div class="tool-meta">
+            <span class="meta-tag">Free tier available</span>
+            <span class="meta-tag">Open Source</span>
+            <span class="meta-tag">All platforms</span>
+          </div>
+          <a href="https://proton.me/mail" target="_blank" class="tool-link fira">proton.me/mail →</a>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-card-top">
+            <div class="tool-name-row">
+              <span class="tool-name">Tutanota</span>
+            </div>
+            <p class="tool-desc">German-based encrypted email with a strong privacy record. All emails, contacts, and calendars are encrypted on-device before being stored. Free tier includes 1GB storage. Slightly less polished than Proton but equally secure.</p>
+          </div>
+          <div class="tool-meta">
+            <span class="meta-tag">Free tier available</span>
+            <span class="meta-tag">Open Source</span>
+            <span class="meta-tag">All platforms</span>
+          </div>
+          <a href="https://tuta.com" target="_blank" class="tool-link fira">tuta.com →</a>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-card-top">
+            <div class="tool-name-row">
+              <span class="tool-name">SimpleLogin</span>
+            </div>
+            <p class="tool-desc">Creates disposable email aliases that forward to your real inbox — so you can sign up for services without exposing your real address. Use it alongside Proton Mail to prevent your email from becoming a tracking vector.</p>
+          </div>
+          <div class="tool-meta">
+            <span class="meta-tag">Free tier available</span>
+            <span class="meta-tag">Open Source</span>
+          </div>
+          <a href="https://simplelogin.io" target="_blank" class="tool-link fira">simplelogin.io →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="section-sep"></div>
+
+    <!-- ── Devices ── -->
+    <section id="devices" class="tool-section reveal">
+      <div class="section-label">
+        <span class="section-icon">📱</span>
+        <h2 class="section-title">Device Security</h2>
+        <p class="section-desc">The safest message is one that can't be read even if your phone is seized. These tools protect what's stored on your device — your most vulnerable point of exposure.</p>
+      </div>
+      <div class="tools-grid">
+
+        <div class="tool-card recommended">
+          <div class="tool-card-top">
+            <div class="tool-name-row">
+              <span class="tool-name">Strong PIN / Passphrase</span>
+              <span class="rec-badge">Do This Now</span>
+            </div>
+            <p class="tool-desc">Use a 6+ digit PIN or a passphrase instead of Face ID or fingerprint unlock. Biometric unlocks can be compelled by law enforcement without a warrant in many jurisdictions — a PIN cannot. Disable biometrics before attending protests or crossing borders.</p>
+          </div>
+          <div class="tool-meta">
+            <span class="meta-tag">Free</span>
+            <span class="meta-tag">iOS · Android</span>
+          </div>
+        </div>
+
+        <div class="tool-card recommended">
+          <div class="tool-card-top">
+            <div class="tool-name-row">
+              <span class="tool-name">Full Disk Encryption</span>
+              <span class="rec-badge">Do This Now</span>
+            </div>
+            <p class="tool-desc">Modern iPhones encrypt data by default when a passcode is set. Android requires enabling encryption in settings on many devices. Full disk encryption makes a seized device unreadable without the PIN — even to tools like Cellebrite.</p>
+          </div>
+          <div class="tool-meta">
+            <span class="meta-tag">Free</span>
+            <span class="meta-tag">iOS · Android</span>
+          </div>
+        </div>
+
+        <div class="tool-card">
+          <div class="tool-card-top">
+            <div class="tool-name-row">
+              <span class="tool-name">GrapheneOS</span>
+            </div>
+            <p class="tool-desc">A hardened, privacy-focused Android operating system for Pixel phones. Removes Google services entirely and adds layers of security far beyond standard Android. Recommended for high-risk individuals — journalists, activists, legal clients — who need maximum protection.</p>
+          </div>
+          <div class="tool-meta">
+            <span class="meta-tag">Free</span>
+            <span class="meta-tag">Open Source</span>
+            <span class="meta-tag">Pixel phones only</span>
+          </div>
+          <a href="https://grapheneos.org" target="_blank" class="tool-link fira">grapheneos.org →</a>
+        </div>
+
+      </div>
+      <div class="section-tip">
+        <span class="tip-icon fira">!</span>
+        <p><strong>At a border crossing:</strong> You have fewer rights at ports of entry. CBP can demand you unlock your device. Consider traveling with a clean device, logging out of all accounts, or enabling lockdown mode (iOS) before you arrive.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <span class="footer-sep">·</span>
+    <a href="#">Invisible Borders</a>
+  </footer>
+
+  <script>
+    // Scroll-reveal
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('revealed');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.07 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Category nav active state on scroll
+    const sections = document.querySelectorAll('.tool-section');
+    const catLinks = document.querySelectorAll('.cat-link');
+
+    const sectionObserver = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          catLinks.forEach(l => l.classList.remove('active'));
+          const active = document.querySelector(`.cat-link[href="#${e.target.id}"]`);
+          if (active) active.classList.add('active');
+        }
+      });
+    }, { threshold: 0.4 });
+
+    sections.forEach(s => sectionObserver.observe(s));
+  </script>
+
+</body>
+</html>
