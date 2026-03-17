@@ -253,13 +253,13 @@
 }
 .org-name {
   font-family: 'Syne', sans-serif;
-  font-size: .95rem;
+  font-size: 1rem;
   font-weight: 700;
   color: var(--text);
   line-height: 1.25;
 }
 .org-desc {
-  font-size: .82rem;
+  font-size: .95rem;
   line-height: 1.7;
   color: var(--muted);
   font-weight: 300;
@@ -331,4 +331,30 @@
 
 @media (min-width: 721px) and (max-width: 960px) {
   .cards-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ── Fallback note ───────────────────────────────────────── */
+.fallback-note {
+  grid-column: 1 / -1;
+  padding: .9rem 1.2rem;
+  background: rgba(255,183,0,0.05);
+  border: 1px solid rgba(255,183,0,0.15);
+  border-left: 2px solid rgba(255,183,0,0.5);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  margin-bottom: .5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+}
+.fallback-note .fira {
+  font-family: 'Fira Code', monospace;
+  font-size: .72rem;
+  color: #fcd34d;
+  letter-spacing: .04em;
+}
+.fallback-note p {
+  font-size: .82rem;
+  color: var(--muted);
+  font-weight: 300;
+  line-height: 1.6;
 }
